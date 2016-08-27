@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Learn 1080</title>
+</head>
+<body>
+	@{
+		string strFileName = "Dariush";
+	}
+
+	@*
+		Error:
+		'string' does not contain a definition for 'jpg' and
+		no extension method 'jpg' accepting a first argument of type 'string' could be found
+	*@
+
+	<img src="~/Images/@strFileName.jpg" alt="@strFileName" />
+
+	@{
+		string strFileNameWithExtension =
+			string.Format("{0}.jpg", strFileName);
+	}
+
+	<img src="~/Images/@strFileNameWithExtension" alt="@strFileName" />
+</body>
+</html>

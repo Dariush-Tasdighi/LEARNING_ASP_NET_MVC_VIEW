@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Learn 1070</title>
+</head>
+<body>
+	<!--
+		HTML Block Comment - به کلاينت ارسال می شود
+	-->
+
+	@*
+		Razor Block Comment - به کلاينت ارسال نمی شود
+	*@
+
+	@*
+		My strFullName value is: @strFullName
+	*@
+
+	@{
+		// Razor Block Code
+
+		string strFirstName = "Dariush";
+		string strLastName = "Tasdighi";
+		string strFullName =
+			string.Format("{0} {1}", strFirstName, strLastName);
+
+		strFullName = strFullName.ToLower();
+
+		if (strFullName == "Dariush Tasdighi")
+		{
+			string strMessage = "Something...";
+		}
+
+		{
+			string strSomeVariable = "Something...";
+		}
+	}
+
+	My strFullName value is: @strFullName
+
+	@*
+		@strMessage
+		@strSomeVariable
+	*@
+</body>
+</html>

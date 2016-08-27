@@ -1,0 +1,16 @@
+﻿@model Models.Person
+
+@if (Model == null)
+{
+	// Do Something!
+
+	<div style="color: blue; background-color: khaki; margin: 4px; padding: 4px; border: thin outset">
+		There is not any person information for displaying!
+	</div>
+
+	return;
+}
+
+<div style="color: blue; background-color: khaki; margin: 4px; padding: 4px; border: thin outset">
+	I'm @Model.FullName and @Model.Age years old.
+</div>

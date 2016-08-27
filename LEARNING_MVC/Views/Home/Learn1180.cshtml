@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Learn 1180</title>
+</head>
+<body>
+	@{
+		// Solution (1)
+		//Models.Person oPerson =
+		//	(Models.Person)ViewBag.Person;
+		// /Solution (1)
+
+		// Solution (2)
+		//Models.Person oPerson = null;
+
+		//if (ViewBag.Person is Models.Person)
+		//{
+		//	oPerson =
+		//		(Models.Person)ViewBag.Person;
+		//}
+		// /Solution (2)
+
+		// Solution (3)
+		Models.Person oPerson =
+			ViewBag.Person as Models.Person;
+	// /Solution (3)
+	}
+
+	@if (oPerson != null)
+	{
+		@:Age: @oPerson.Age
+		<br />
+		@:Full Name: @oPerson.FullName
+	}
+</body>
+</html>

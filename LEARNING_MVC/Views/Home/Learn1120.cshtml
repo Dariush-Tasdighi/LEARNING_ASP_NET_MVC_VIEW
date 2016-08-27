@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Learn 1120</title>
+</head>
+<body>
+	@{
+		// اگر بخواهيم در وسط کد سی شارپ، صرفا يک متن را چاپ کنيم، از تگ‌های ذيل استفاده می‌کنیم
+
+		string strFirstName = "Dariush";
+
+		if (strFirstName.StartsWith("D"))
+		{
+			<text>The name starts with "D" character!</text>
+		}
+		else
+		{
+			@:The name does not start with "D" character!
+		}
+	}
+</body>
+</html>

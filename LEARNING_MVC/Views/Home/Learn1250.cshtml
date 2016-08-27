@@ -1,0 +1,21 @@
+﻿@*@model System.Collections.Generic.List<Models.Person>*@
+@*@model System.Collections.Generic.IEnumerable<Models.Person>*@
+@model IEnumerable<Models.Person>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Learn 1250</title>
+</head>
+<body>
+	@foreach (Models.Person oPerson in Model)
+	{
+		<div style="color: blue; background-color: khaki; margin: 4px; padding: 4px; border: thin outset">
+			I'm @oPerson.FullName, and @oPerson.Age years old.
+		</div>
+	}
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Models.Person>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Learn 1290</title>
+</head>
+<body>
+	@foreach (Models.Person oPerson in Model)
+	{
+		@Html.Partial(partialViewName: "_Partial_DisplayPerson2", model: oPerson)
+	}
+</body>
+</html>

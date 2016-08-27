@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Models.Person>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Learn 1320</title>
+</head>
+<body>
+	@{
+		Models.Person oPerson = null;
+	}
+
+	@Html.Partial("_Partial_DisplayPerson3", model: oPerson)
+</body>
+</html>
