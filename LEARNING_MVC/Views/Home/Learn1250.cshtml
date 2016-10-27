@@ -14,7 +14,7 @@
 	@foreach (Models.Person oPerson in Model)
 	{
 		<div style="color: blue; background-color: khaki; margin: 4px; padding: 4px; border: thin outset">
-			I'm @oPerson.FullName, and @oPerson.Age years old.
+			I'm @(oPerson.FullName), and @(oPerson.Age) years old.
 		</div>
 	}
 </body>

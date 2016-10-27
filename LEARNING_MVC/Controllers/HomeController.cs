@@ -1,8 +1,11 @@
-﻿namespace LEARNING_MVC.Controllers
+﻿using System.Linq;
+//using System.Data.Entity;
+
+namespace LEARNING_MVC.Controllers
 {
 	public class HomeController : System.Web.Mvc.Controller
 	{
-		public HomeController()
+		public HomeController() : base()
 		{
 		}
 
@@ -135,13 +138,22 @@
 			// /Solution (2)
 
 			// Solution (3)
+			//Models.Person oPerson =
+			//	new Models.Person()
+			//	{
+			//		Age = 20,
+			//		FullName = "Ali Reza Alavi"
+			//	};
+			// /Solution (3)
+
+			// Solution (4)
 			Models.Person oPerson =
 				new Models.Person()
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
 				};
-			// /Solution (3)
+			// /Solution (4)
 
 			ViewBag.Person = oPerson;
 

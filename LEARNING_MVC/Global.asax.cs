@@ -2,7 +2,7 @@
 {
 	public class MvcApplication : System.Web.HttpApplication
 	{
-		public MvcApplication()
+		public MvcApplication() : base()
 		{
 		}
 

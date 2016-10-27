@@ -1,7 +1,10 @@
 ﻿//namespace LEARNING_MVC.Models
 namespace Models
 {
-	public class SomeClass
+	public class SomeClass : object
 	{
+		public SomeClass() : base()
+		{
+		}
 	}
 }

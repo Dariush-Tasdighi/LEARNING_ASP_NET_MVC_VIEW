@@ -2,9 +2,9 @@
 
 namespace LEARNING_MVC
 {
-	public class RouteConfig
+	public static class RouteConfig
 	{
-		public RouteConfig()
+		static RouteConfig()
 		{
 		}
 

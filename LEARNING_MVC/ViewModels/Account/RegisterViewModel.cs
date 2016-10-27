@@ -1,9 +1,9 @@
 ﻿//namespace LEARNING_MVC.ViewModels.Account
 namespace ViewModels.Account
 {
-	public class RegisterViewModel : System.Object
+	public class RegisterViewModel : object
 	{
-		public RegisterViewModel()
+		public RegisterViewModel() : base()
 		{
 		}
 
