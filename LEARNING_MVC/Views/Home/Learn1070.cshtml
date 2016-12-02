@@ -10,7 +10,6 @@
 	<!--
 		HTML Block Comment - به کلاينت ارسال می شود
 	-->
-
 	@*
 		Razor Block Comment - به کلاينت ارسال نمی شود
 	*@
@@ -25,7 +24,8 @@
 		string strFirstName = "Dariush";
 		string strLastName = "Tasdighi";
 		string strFullName =
-			string.Format("{0} {1}", strFirstName, strLastName);
+			string.Format("{0} {1}",
+			strFirstName, strLastName).Trim();
 
 		strFullName = strFullName.ToLower();
 

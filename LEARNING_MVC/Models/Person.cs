@@ -10,11 +10,19 @@ namespace Models
 		{
 		}
 
+		// !دیگر عرف نیست
+		//public Person(int age) : base()
+		//{
+		//	Age = age;
+		//}
+
+		// !دیگر عرف نیست
 		//public Person(string fullName) : base()
 		//{
 		//	FullName = fullName;
 		//}
 
+		// !دیگر عرف نیست
 		//public Person(string fullName, int age) : base()
 		//{
 		//	Age = age;
