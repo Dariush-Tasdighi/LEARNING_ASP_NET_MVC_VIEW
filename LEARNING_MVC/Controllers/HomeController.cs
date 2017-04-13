@@ -418,5 +418,11 @@ namespace LEARNING_MVC.Controllers
 		{
 			return (View());
 		}
+
+		[System.Web.Mvc.HttpGet]
+		public System.Web.Mvc.ViewResult Learn1370()
+		{
+			return (View());
+		}
 	}
 }
