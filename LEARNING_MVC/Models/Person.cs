@@ -6,6 +6,9 @@ namespace Models
 	//public class Person : System.Object
 	public class Person : object
 	{
+		/// <summary>
+		/// Default Constructor
+		/// </summary>
 		public Person() : base()
 		{
 		}
