@@ -269,11 +269,6 @@ namespace LEARNING_MVC.Controllers
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1240()
 		{
-			ViewModels.Home.Learn1240ViewModel
-				oViewModel = new ViewModels.Home.Learn1240ViewModel();
-
-			oViewModel.FactoryName = "Iran Khodro Co.";
-
 			Models.Person oPerson =
 				new Models.Person()
 				{
@@ -281,7 +276,11 @@ namespace LEARNING_MVC.Controllers
 					FullName = "Ali Reza Alavi",
 				};
 
+			ViewModels.Home.Learn1240ViewModel
+				oViewModel = new ViewModels.Home.Learn1240ViewModel();
+
 			oViewModel.Person = oPerson;
+			oViewModel.FactoryName = "Iran Khodro Co.";
 
 			return (View(model: oViewModel));
 		}
@@ -294,11 +293,25 @@ namespace LEARNING_MVC.Controllers
 
 			for (int intIndex = 1; intIndex <= 10; intIndex++)
 			{
+				//Models.Person oPerson =
+				//	new Models.Person()
+				//	{
+				//		Age = 20 + intIndex,
+				//		FullName = "Full Name " + intIndex,
+				//	};
+
+				//Models.Person oPerson =
+				//	new Models.Person()
+				//	{
+				//		Age = 20 + intIndex,
+				//		FullName = string.Format("Full Name ({0})", intIndex),
+				//	};
+
 				Models.Person oPerson =
 					new Models.Person()
 					{
 						Age = 20 + intIndex,
-						FullName = string.Format("Full Name ({0})", intIndex),
+						FullName = $"Full Name ({ intIndex })",
 					};
 
 				oPeople.Add(oPerson);
