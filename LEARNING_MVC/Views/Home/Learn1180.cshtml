@@ -9,31 +9,31 @@
 <body>
 	@{
 		// Solution (1)
-		//Models.Person oPerson =
+		//Models.Person person =
 		//	(Models.Person)ViewBag.Person;
 		// /Solution (1)
 
 		// Solution (2)
-		//Models.Person oPerson = null;
+		//Models.Person person = null;
 
 		//if (ViewBag.Person is Models.Person)
 		//{
-		//	oPerson =
+		//	person =
 		//		(Models.Person)ViewBag.Person;
 		//}
 		// /Solution (2)
 
 		// Solution (3)
-		Models.Person oPerson =
+		Models.Person person =
 			ViewBag.Person as Models.Person;
-	// /Solution (3)
+		// /Solution (3)
 	}
 
-	@if (oPerson != null)
+	@if (person != null)
 	{
-		@:Age: @(oPerson.Age)
+		@:Age: @(person.Age)
 		<br />
-		@:Full Name: @(oPerson.FullName)
+		@:Full Name: @(person.FullName)
 	}
 </body>
 </html>

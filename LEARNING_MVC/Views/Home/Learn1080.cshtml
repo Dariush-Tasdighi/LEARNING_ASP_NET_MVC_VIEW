@@ -8,7 +8,7 @@
 </head>
 <body>
 	@{
-		string strFileName = "Dariush";
+		string fileName = "Dariush";
 	}
 
 	@*
@@ -17,13 +17,13 @@
 		no extension method 'jpg' accepting a first argument of type 'string' could be found
 	*@
 
-	<img src="~/Images/@strFileName.jpg" alt="@strFileName" />
+	<img src="~/Content/Images/@fileName.jpg" alt="@fileName" />
 
 	@{
-		string strFileNameWithExtension =
-			string.Format("{0}.jpg", strFileName);
+		string fileNameWithExtension =
+			string.Format("{0}.jpg", fileName);
 	}
 
-	<img src="~/Images/@strFileNameWithExtension" alt="@strFileName" />
+	<img src="~/Content/Images/@fileNameWithExtension" alt="@fileName" />
 </body>
 </html>

@@ -11,10 +11,10 @@
 	<title>Learn 1250</title>
 </head>
 <body>
-	@foreach (Models.Person oPerson in Model)
+	@foreach (Models.Person person in Model)
 	{
 		<div style="color: blue; background-color: khaki; margin: 4px; padding: 4px; border: thin outset">
-			I'm @(oPerson.FullName), and @(oPerson.Age) years old.
+			I'm @(person.FullName), and @(person.Age) years old.
 		</div>
 	}
 </body>

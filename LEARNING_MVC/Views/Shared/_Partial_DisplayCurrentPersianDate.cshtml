@@ -1,14 +1,14 @@
 ﻿@{
-	System.DateTime dtmNow = System.DateTime.Now;
+	System.DateTime now = System.DateTime.Now;
 
 	System.Globalization.PersianCalendar
-		oPersianCalendar = new System.Globalization.PersianCalendar();
+		persianCalendar = new System.Globalization.PersianCalendar();
 
-	int intYear = oPersianCalendar.GetYear(dtmNow);
-	int intMonth = oPersianCalendar.GetMonth(dtmNow);
-	int intDay = oPersianCalendar.GetDayOfMonth(dtmNow);
+	int year = persianCalendar.GetYear(now);
+	int month = persianCalendar.GetMonth(now);
+	int day = persianCalendar.GetDayOfMonth(now);
 }
 
 <div style="color: blue; background-color: khaki; margin: 4px; padding: 4px; border: thin outset">
-	@intYear / @intMonth / @intDay
+	@year / @month / @day
 </div>

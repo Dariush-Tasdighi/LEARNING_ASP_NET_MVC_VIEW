@@ -126,19 +126,19 @@ namespace LEARNING_MVC.Controllers
 		public System.Web.Mvc.ViewResult Learn1160()
 		{
 			// Solution (1)
-			//Models.Person oPerson = new Models.Person();
+			//Models.Person person = new Models.Person();
 
-			//oPerson.Age = 20;
-			//oPerson.FullName = "Ali Reza Alavi";
+			//person.Age = 20;
+			//person.FullName = "Ali Reza Alavi";
 			// /Solution (1)
 
 			// Solution (2)
-			//Models.Person oPerson =
+			//Models.Person person =
 			//	new Models.Person("Ali Reza Alavi", 20);
 			// /Solution (2)
 
 			// Solution (3)
-			//Models.Person oPerson =
+			//Models.Person person =
 			//	new Models.Person()
 			//	{
 			//		Age = 20,
@@ -147,7 +147,7 @@ namespace LEARNING_MVC.Controllers
 			// /Solution (3)
 
 			// Solution (4)
-			Models.Person oPerson =
+			Models.Person person =
 				new Models.Person()
 				{
 					Age = 20,
@@ -155,7 +155,7 @@ namespace LEARNING_MVC.Controllers
 				};
 			// /Solution (4)
 
-			ViewBag.Person = oPerson;
+			ViewBag.Person = person;
 
 			return (View());
 		}
@@ -163,14 +163,14 @@ namespace LEARNING_MVC.Controllers
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1170()
 		{
-			Models.Person oPerson =
+			Models.Person person =
 				new Models.Person()
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
 				};
 
-			ViewBag.Person = oPerson;
+			ViewBag.Person = person;
 
 			return (View());
 		}
@@ -178,14 +178,14 @@ namespace LEARNING_MVC.Controllers
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1180()
 		{
-			Models.Person oPerson =
+			Models.Person person =
 				new Models.Person()
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
 				};
 
-			ViewBag.Person = oPerson;
+			ViewBag.Person = person;
 
 			return (View());
 		}
@@ -193,40 +193,40 @@ namespace LEARNING_MVC.Controllers
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1190()
 		{
-			Models.Person oPerson =
+			Models.Person person =
 				new Models.Person()
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
 				};
 
-			return (View(model: oPerson));
+			return (View(model: person));
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1200()
 		{
-			Models.Person oPerson =
+			Models.Person person =
 				new Models.Person()
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
 				};
 
-			return (View(model: oPerson));
+			return (View(model: person));
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1210()
 		{
-			Models.Person oPerson =
+			Models.Person person =
 				new Models.Person()
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
 				};
 
-			return (View(model: oPerson));
+			return (View(model: person));
 		}
 
 		/// <summary>
@@ -235,14 +235,14 @@ namespace LEARNING_MVC.Controllers
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1220()
 		{
-			Models.Person oPerson =
+			Models.Person person =
 				new Models.Person()
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
 				};
 
-			return (View(model: oPerson));
+			return (View(model: person));
 		}
 
 		/// <summary>
@@ -253,14 +253,14 @@ namespace LEARNING_MVC.Controllers
 		{
 			ViewBag.FactoryName = "Iran Khodro Co.";
 
-			Models.Person oPerson =
+			Models.Person person =
 				new Models.Person()
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
 				};
 
-			return (View(model: oPerson));
+			return (View(model: person));
 		}
 
 		/// <summary>
@@ -269,7 +269,7 @@ namespace LEARNING_MVC.Controllers
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1240()
 		{
-			Models.Person oPerson =
+			Models.Person person =
 				new Models.Person()
 				{
 					Age = 20,
@@ -277,47 +277,47 @@ namespace LEARNING_MVC.Controllers
 				};
 
 			ViewModels.Home.Learn1240ViewModel
-				oViewModel = new ViewModels.Home.Learn1240ViewModel();
+				viewModel = new ViewModels.Home.Learn1240ViewModel();
 
-			oViewModel.Person = oPerson;
-			oViewModel.FactoryName = "Iran Khodro Co.";
+			viewModel.Person = person;
+			viewModel.FactoryName = "Iran Khodro Co.";
 
-			return (View(model: oViewModel));
+			return (View(model: viewModel));
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1250()
 		{
 			System.Collections.Generic.List<Models.Person>
-				oPeople = new System.Collections.Generic.List<Models.Person>();
+				people = new System.Collections.Generic.List<Models.Person>();
 
-			for (int intIndex = 1; intIndex <= 10; intIndex++)
+			for (int index = 1; index <= 10; index++)
 			{
-				//Models.Person oPerson =
+				//Models.Person person =
 				//	new Models.Person()
 				//	{
-				//		Age = 20 + intIndex,
-				//		FullName = "Full Name " + intIndex,
+				//		Age = 20 + index,
+				//		FullName = "Full Name " + index,
 				//	};
 
-				//Models.Person oPerson =
+				//Models.Person person =
 				//	new Models.Person()
 				//	{
-				//		Age = 20 + intIndex,
-				//		FullName = string.Format("Full Name ({0})", intIndex),
+				//		Age = 20 + index,
+				//		FullName = string.Format("Full Name ({0})", index),
 				//	};
 
-				Models.Person oPerson =
+				Models.Person person =
 					new Models.Person()
 					{
-						Age = 20 + intIndex,
-						FullName = $"Full Name ({ intIndex })",
+						Age = 20 + index,
+						FullName = $"Full Name ({ index })",
 					};
 
-				oPeople.Add(oPerson);
+				people.Add(person);
 			}
 
-			return (View(model: oPeople));
+			return (View(model: people));
 		}
 
 		[System.Web.Mvc.HttpGet]
@@ -336,21 +336,21 @@ namespace LEARNING_MVC.Controllers
 		public System.Web.Mvc.ViewResult Learn1280()
 		{
 			System.Collections.Generic.List<Models.Person>
-				oPeople = new System.Collections.Generic.List<Models.Person>();
+				people = new System.Collections.Generic.List<Models.Person>();
 
-			for (int intIndex = 1; intIndex <= 10; intIndex++)
+			for (int index = 1; index <= 10; index++)
 			{
-				Models.Person oPerson =
+				Models.Person person =
 					new Models.Person()
 					{
-						Age = 20 + intIndex,
-						FullName = string.Format("Full Name ({0})", intIndex),
+						Age = 20 + index,
+						FullName = string.Format("Full Name ({0})", index),
 					};
 
-				oPeople.Add(oPerson);
+				people.Add(person);
 			}
 
-			return (View(model: oPeople));
+			return (View(model: people));
 		}
 
 		[System.Web.Mvc.HttpGet]
@@ -359,13 +359,13 @@ namespace LEARNING_MVC.Controllers
 			System.Collections.Generic.List<Models.Person>
 				oPeople = new System.Collections.Generic.List<Models.Person>();
 
-			for (int intIndex = 1; intIndex <= 10; intIndex++)
+			for (int index = 1; index <= 10; index++)
 			{
 				Models.Person oPerson =
 					new Models.Person()
 					{
-						Age = 20 + intIndex,
-						FullName = string.Format("Full Name ({0})", intIndex),
+						Age = 20 + index,
+						FullName = string.Format("Full Name ({0})", index),
 					};
 
 				oPeople.Add(oPerson);
@@ -395,7 +395,7 @@ namespace LEARNING_MVC.Controllers
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1330()
 		{
-			Models.Person oPerson =
+			Models.Person person =
 				new Models.Person()
 				{
 					Age = 20,
@@ -403,13 +403,13 @@ namespace LEARNING_MVC.Controllers
 					Description = "<b>Nothing!</b>",
 				};
 
-			return (View(model: oPerson));
+			return (View(model: person));
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1340()
 		{
-			Models.Person oPerson =
+			Models.Person person =
 				new Models.Person()
 				{
 					Age = 20,
@@ -417,7 +417,7 @@ namespace LEARNING_MVC.Controllers
 					Description = "<b>Nothing!</b>",
 				};
 
-			return (View(model: oPerson));
+			return (View(model: person));
 		}
 
 		[System.Web.Mvc.HttpGet]

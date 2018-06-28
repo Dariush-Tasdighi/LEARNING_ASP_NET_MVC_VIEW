@@ -16,35 +16,35 @@
 	*@
 
 	@*
-		My strFullName value is: @strFullName
+		My fullName value is: @fullName
 	*@
 
 	@{
 		// Razor Block Code
 
-		string strFirstName = "Dariush";
-		string strLastName = "Tasdighi";
-		string strFullName =
+		string firstName = "Dariush";
+		string lastName = "Tasdighi";
+		string fullName =
 			string.Format("{0} {1}",
-			strFirstName, strLastName).Trim();
+			firstName, lastName).Trim();
 
-		strFullName = strFullName.ToLower();
+		fullName = fullName.ToLower();
 
-		if (strFullName == "Dariush Tasdighi")
+		if (fullName == "Dariush Tasdighi")
 		{
-			string strMessage = "Something...";
+			string message = "Something...";
 		}
 
 		{
-			string strSomeVariable = "Something...";
+			string someVariable = "Something...";
 		}
 	}
 
-	My strFullName value is: @strFullName
+	My strFullName value is: @fullName
 
 	@*
-		@strMessage
-		@strSomeVariable
+		@message
+		@someVariable
 	*@
 </body>
 </html>

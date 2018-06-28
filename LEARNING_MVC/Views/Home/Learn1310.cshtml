@@ -1,6 +1,4 @@
-﻿@model IEnumerable<Models.Person>
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html>
 <head>
@@ -10,12 +8,12 @@
 </head>
 <body>
 	@{
-		Models.Person oPerson = null;
+		Models.Person person = null;
 	}
 
-	@if (oPerson != null)
+	@if (person != null)
 	{
-		@Html.Partial(partialViewName: "_Partial_DisplayPerson1", model: oPerson)
+		@Html.Partial(partialViewName: "_Partial_DisplayPerson1", model: person)
 	}
 </body>
 </html>

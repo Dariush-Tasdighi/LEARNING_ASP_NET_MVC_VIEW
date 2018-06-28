@@ -9,9 +9,9 @@
 	<title>Learn 1280</title>
 </head>
 <body>
-	@foreach (Models.Person oPerson in Model)
+	@foreach (Models.Person person in Model)
 	{
-		@Html.Partial(partialViewName: "_Partial_DisplayPerson1", model: oPerson)
+		@Html.Partial(partialViewName: "_Partial_DisplayPerson1", model: person)
 	}
 </body>
 </html>

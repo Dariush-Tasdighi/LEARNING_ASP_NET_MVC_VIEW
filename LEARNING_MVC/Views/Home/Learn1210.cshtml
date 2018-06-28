@@ -8,15 +8,15 @@
 </head>
 <body>
 	@{
-		Models.Person oPerson =
+		Models.Person person =
 			Model as Models.Person;
 	}
 
-	@if (oPerson != null)
+	@if (person != null)
 	{
-		@:Age: @(oPerson.Age)
+		@:Age: @(person.Age)
 		<br />
-		@:Full Name: @(oPerson.FullName)
+		@:Full Name: @(person.FullName)
 	}
 </body>
 </html>
