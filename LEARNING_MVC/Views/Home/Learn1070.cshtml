@@ -10,7 +10,6 @@
 	<!--
 		HTML Block Comment - به کلاينت ارسال می شود
 	-->
-
 	@*
 		Razor Block Comment - به کلاينت ارسال نمی شود
 	*@
@@ -25,8 +24,7 @@
 		string firstName = "Dariush";
 		string lastName = "Tasdighi";
 		string fullName =
-			string.Format("{0} {1}",
-			firstName, lastName).Trim();
+			string.Format("{0} {1}", firstName, lastName);
 
 		fullName = fullName.ToLower();
 
@@ -40,7 +38,7 @@
 		}
 	}
 
-	My strFullName value is: @fullName
+	My fullName value is: @fullName
 
 	@*
 		@message

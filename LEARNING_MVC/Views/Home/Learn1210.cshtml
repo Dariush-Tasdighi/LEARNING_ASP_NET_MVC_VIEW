@@ -1,4 +1,14 @@
-﻿<!DOCTYPE html>
+﻿@{
+	Models.Person person =
+		Model as Models.Person;
+
+	if (person == null)
+	{
+		return;
+	}
+}
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -7,16 +17,8 @@
 	<title>Learn 1210</title>
 </head>
 <body>
-	@{
-		Models.Person person =
-			Model as Models.Person;
-	}
-
-	@if (person != null)
-	{
-		@:Age: @(person.Age)
-		<br />
-		@:Full Name: @(person.FullName)
-	}
+	Age: @(person.Age)
+	<br />
+	Full Name: @(person.FullName)
 </body>
 </html>

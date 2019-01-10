@@ -12,89 +12,95 @@ namespace LEARNING_MVC.Controllers
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Index()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1000()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1010()
 		{
-			return (View(viewName: "Learn1000"));
+			return View(viewName: "Learn1000");
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1020()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1030()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1040()
 		{
-			return (View());
+			return View();
+		}
+
+		[System.Web.Mvc.HttpGet]
+		public System.Web.Mvc.ViewResult Learn1045()
+		{
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1050()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1060()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1070()
 		{
 			{
-				int intSomeVariable = 10;
+				int someVariable = 10;
 			}
 
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1080()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1090()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1100()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1110()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1120()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
@@ -102,7 +108,7 @@ namespace LEARNING_MVC.Controllers
 		{
 			ViewData["Message"] = "Hello, World!";
 
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
@@ -110,7 +116,7 @@ namespace LEARNING_MVC.Controllers
 		{
 			ViewBag.Message = "Hello World!";
 
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
@@ -119,7 +125,7 @@ namespace LEARNING_MVC.Controllers
 			ViewBag.Message1 = "Hello World (1)!";
 			ViewData["Message2"] = "Hello World (2)!";
 
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
@@ -148,7 +154,7 @@ namespace LEARNING_MVC.Controllers
 
 			// Solution (4)
 			Models.Person person =
-				new Models.Person()
+				new Models.Person
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
@@ -157,14 +163,14 @@ namespace LEARNING_MVC.Controllers
 
 			ViewBag.Person = person;
 
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1170()
 		{
 			Models.Person person =
-				new Models.Person()
+				new Models.Person
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
@@ -172,14 +178,16 @@ namespace LEARNING_MVC.Controllers
 
 			ViewBag.Person = person;
 
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1180()
 		{
+			//ViewBag.Person = null;
+
 			Models.Person person =
-				new Models.Person()
+				new Models.Person
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
@@ -187,20 +195,20 @@ namespace LEARNING_MVC.Controllers
 
 			ViewBag.Person = person;
 
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1190()
 		{
 			Models.Person person =
-				new Models.Person()
+				new Models.Person
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
 				};
 
-			return (View(model: person));
+			return View(model: person);
 		}
 
 		[System.Web.Mvc.HttpGet]
@@ -213,12 +221,14 @@ namespace LEARNING_MVC.Controllers
 					FullName = "Ali Reza Alavi",
 				};
 
-			return (View(model: person));
+			return View(model: person);
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1210()
 		{
+			//return View(model: null);
+
 			Models.Person person =
 				new Models.Person()
 				{
@@ -226,7 +236,7 @@ namespace LEARNING_MVC.Controllers
 					FullName = "Ali Reza Alavi",
 				};
 
-			return (View(model: person));
+			return View(model: person);
 		}
 
 		/// <summary>
@@ -235,6 +245,8 @@ namespace LEARNING_MVC.Controllers
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1220()
 		{
+			//return View(model: null);
+
 			Models.Person person =
 				new Models.Person()
 				{
@@ -242,7 +254,7 @@ namespace LEARNING_MVC.Controllers
 					FullName = "Ali Reza Alavi",
 				};
 
-			return (View(model: person));
+			return View(model: person);
 		}
 
 		/// <summary>
@@ -260,7 +272,7 @@ namespace LEARNING_MVC.Controllers
 					FullName = "Ali Reza Alavi",
 				};
 
-			return (View(model: person));
+			return View(model: person);
 		}
 
 		/// <summary>
@@ -282,7 +294,7 @@ namespace LEARNING_MVC.Controllers
 			viewModel.Person = person;
 			viewModel.FactoryName = "Iran Khodro Co.";
 
-			return (View(model: viewModel));
+			return View(model: viewModel);
 		}
 
 		[System.Web.Mvc.HttpGet]
@@ -317,19 +329,19 @@ namespace LEARNING_MVC.Controllers
 				people.Add(person);
 			}
 
-			return (View(model: people));
+			return View(model: people);
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1260()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1270()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
@@ -350,7 +362,7 @@ namespace LEARNING_MVC.Controllers
 				people.Add(person);
 			}
 
-			return (View(model: people));
+			return View(model: people);
 		}
 
 		[System.Web.Mvc.HttpGet]
@@ -371,25 +383,25 @@ namespace LEARNING_MVC.Controllers
 				oPeople.Add(oPerson);
 			}
 
-			return (View(model: oPeople));
+			return View(model: oPeople);
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1300()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1310()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1320()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
@@ -403,7 +415,7 @@ namespace LEARNING_MVC.Controllers
 					Description = "<b>Nothing!</b>",
 				};
 
-			return (View(model: person));
+			return View(model: person);
 		}
 
 		[System.Web.Mvc.HttpGet]
@@ -417,25 +429,25 @@ namespace LEARNING_MVC.Controllers
 					Description = "<b>Nothing!</b>",
 				};
 
-			return (View(model: person));
+			return View(model: person);
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1350()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1360()
 		{
-			return (View());
+			return View();
 		}
 
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1370()
 		{
-			return (View());
+			return View();
 		}
 	}
 }

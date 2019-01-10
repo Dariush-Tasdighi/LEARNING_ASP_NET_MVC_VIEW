@@ -1,4 +1,33 @@
-﻿<!DOCTYPE html>
+﻿@{
+	// Solution (1)
+	//Models.Person person =
+	//	(Models.Person)ViewBag.Person;
+	// /Solution (1)
+
+	// Solution (2)
+	//Models.Person person = null;
+
+	//if (ViewBag.Person is Models.Person)
+	//{
+	//	person =
+	//		(Models.Person)ViewBag.Person;
+	//}
+	// /Solution (2)
+
+	// Solution (3)
+	Models.Person person =
+		ViewBag.Person as Models.Person;
+	// /Solution (3)
+
+	if (person == null)
+	{
+		// Log
+
+		return;
+	}
+}
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -7,33 +36,8 @@
 	<title>Learn 1180</title>
 </head>
 <body>
-	@{
-		// Solution (1)
-		//Models.Person person =
-		//	(Models.Person)ViewBag.Person;
-		// /Solution (1)
-
-		// Solution (2)
-		//Models.Person person = null;
-
-		//if (ViewBag.Person is Models.Person)
-		//{
-		//	person =
-		//		(Models.Person)ViewBag.Person;
-		//}
-		// /Solution (2)
-
-		// Solution (3)
-		Models.Person person =
-			ViewBag.Person as Models.Person;
-		// /Solution (3)
-	}
-
-	@if (person != null)
-	{
-		@:Age: @(person.Age)
-		<br />
-		@:Full Name: @(person.FullName)
-	}
+	Age: @(person.Age)
+	<br />
+	Full Name: @(person.FullName)
 </body>
 </html>
