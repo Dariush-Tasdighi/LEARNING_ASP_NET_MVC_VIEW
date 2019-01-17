@@ -1,5 +1,10 @@
 ﻿@model IEnumerable<Models.Person>
 
+@if (Model == null)
+{
+	return;
+}
+
 <!DOCTYPE html>
 
 <html>

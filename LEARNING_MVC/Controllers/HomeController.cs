@@ -281,6 +281,8 @@ namespace LEARNING_MVC.Controllers
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1240()
 		{
+			string factoryName = "Iran Khodro Co.";
+
 			Models.Person person =
 				new Models.Person()
 				{
@@ -292,7 +294,7 @@ namespace LEARNING_MVC.Controllers
 				viewModel = new ViewModels.Home.Learn1240ViewModel();
 
 			viewModel.Person = person;
-			viewModel.FactoryName = "Iran Khodro Co.";
+			viewModel.FactoryName = factoryName;
 
 			return View(model: viewModel);
 		}
@@ -305,26 +307,57 @@ namespace LEARNING_MVC.Controllers
 
 			for (int index = 1; index <= 10; index++)
 			{
+				// **************************************************
+				//Models.Person person = new Models.Person();
+
+				//person.Age = 20 + index;
+				//person.FullName = "Full Name " + index;
+				// **************************************************
+
+				// **************************************************
+				//Models.Person person = new Models.Person() { Age = 20 + index, FullName = "Full Name " + index };
+				// **************************************************
+
+				// **************************************************
+				//Models.Person person =
+				//	new Models.Person() { Age = 20 + index, FullName = "Full Name " + index };
+				// **************************************************
+
+				// **************************************************
 				//Models.Person person =
 				//	new Models.Person()
+				//	{
+				//		Age = 20 + index,
+				//		FullName = "Full Name " + index
+				//	};
+				// **************************************************
+
+				// **************************************************
+				//Models.Person person =
+				//	new Models.Person
 				//	{
 				//		Age = 20 + index,
 				//		FullName = "Full Name " + index,
 				//	};
+				// **************************************************
 
+				// **************************************************
 				//Models.Person person =
-				//	new Models.Person()
+				//	new Models.Person
 				//	{
 				//		Age = 20 + index,
 				//		FullName = string.Format("Full Name ({0})", index),
 				//	};
+				// **************************************************
 
+				// **************************************************
 				Models.Person person =
-					new Models.Person()
+					new Models.Person
 					{
 						Age = 20 + index,
 						FullName = $"Full Name ({ index })",
 					};
+				// **************************************************
 
 				people.Add(person);
 			}
@@ -353,10 +386,10 @@ namespace LEARNING_MVC.Controllers
 			for (int index = 1; index <= 10; index++)
 			{
 				Models.Person person =
-					new Models.Person()
+					new Models.Person
 					{
 						Age = 20 + index,
-						FullName = string.Format("Full Name ({0})", index),
+						FullName = $"Full Name ({ index })",
 					};
 
 				people.Add(person);
@@ -369,21 +402,21 @@ namespace LEARNING_MVC.Controllers
 		public System.Web.Mvc.ViewResult Learn1290()
 		{
 			System.Collections.Generic.List<Models.Person>
-				oPeople = new System.Collections.Generic.List<Models.Person>();
+				people = new System.Collections.Generic.List<Models.Person>();
 
 			for (int index = 1; index <= 10; index++)
 			{
-				Models.Person oPerson =
-					new Models.Person()
+				Models.Person person =
+					new Models.Person
 					{
 						Age = 20 + index,
-						FullName = string.Format("Full Name ({0})", index),
+						FullName = $"Full Name ({ index })",
 					};
 
-				oPeople.Add(oPerson);
+				people.Add(person);
 			}
 
-			return View(model: oPeople);
+			return View(model: people);
 		}
 
 		[System.Web.Mvc.HttpGet]
@@ -408,7 +441,7 @@ namespace LEARNING_MVC.Controllers
 		public System.Web.Mvc.ViewResult Learn1330()
 		{
 			Models.Person person =
-				new Models.Person()
+				new Models.Person
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
@@ -422,7 +455,7 @@ namespace LEARNING_MVC.Controllers
 		public System.Web.Mvc.ViewResult Learn1340()
 		{
 			Models.Person person =
-				new Models.Person()
+				new Models.Person
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
