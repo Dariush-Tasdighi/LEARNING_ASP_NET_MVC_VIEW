@@ -162,6 +162,7 @@ namespace LEARNING_MVC.Controllers
 			// /Solution (4)
 
 			ViewBag.Person = person;
+			//ViewData["Person"] = person;
 
 			return View();
 		}
@@ -290,11 +291,12 @@ namespace LEARNING_MVC.Controllers
 					FullName = "Ali Reza Alavi",
 				};
 
-			ViewModels.Home.Learn1240ViewModel
-				viewModel = new ViewModels.Home.Learn1240ViewModel();
-
-			viewModel.Person = person;
-			viewModel.FactoryName = factoryName;
+			ViewModels.Home.Learn1240ViewModel viewModel =
+				new ViewModels.Home.Learn1240ViewModel
+				{
+					Person = person,
+					FactoryName = factoryName,
+				};
 
 			return View(model: viewModel);
 		}
