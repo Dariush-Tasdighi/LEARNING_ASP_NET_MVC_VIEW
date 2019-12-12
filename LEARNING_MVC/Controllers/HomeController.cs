@@ -24,7 +24,8 @@ namespace LEARNING_MVC.Controllers
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult Learn1010()
 		{
-			return View(viewName: "Learn1000");
+			//return View(viewName: "Learn1000");
+			return View(viewName: nameof(Learn1000));
 		}
 
 		[System.Web.Mvc.HttpGet]
@@ -216,7 +217,7 @@ namespace LEARNING_MVC.Controllers
 		public System.Web.Mvc.ViewResult Learn1200()
 		{
 			Models.Person person =
-				new Models.Person()
+				new Models.Person
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
@@ -231,7 +232,7 @@ namespace LEARNING_MVC.Controllers
 			//return View(model: null);
 
 			Models.Person person =
-				new Models.Person()
+				new Models.Person
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
@@ -249,7 +250,7 @@ namespace LEARNING_MVC.Controllers
 			//return View(model: null);
 
 			Models.Person person =
-				new Models.Person()
+				new Models.Person
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
@@ -267,7 +268,7 @@ namespace LEARNING_MVC.Controllers
 			ViewBag.FactoryName = "Iran Khodro Co.";
 
 			Models.Person person =
-				new Models.Person()
+				new Models.Person
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
@@ -285,7 +286,7 @@ namespace LEARNING_MVC.Controllers
 			string factoryName = "Iran Khodro Co.";
 
 			Models.Person person =
-				new Models.Person()
+				new Models.Person
 				{
 					Age = 20,
 					FullName = "Ali Reza Alavi",
